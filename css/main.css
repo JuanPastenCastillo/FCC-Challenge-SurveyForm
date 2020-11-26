@@ -1,20 +1,205 @@
-*{
- margin:0;
- padding:0;
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+:root{
+ --borderGreen:1px green solid;
+ --borderYellow:1px yellow solid;
+ --borderBlack:1px black solid;
 }
 
+/* *{
+ margin:0;
+ padding:0;
+} */
+
 html{
- font-size:24px;
+ font-size:1.6rem;
  word-spacing:0.16rem;
  letter-spacing: 0.12rem;
  line-height: 2.0rem;
  /* color:#F2F2F2; */
  text-align:center;
- color:black;
+ /* color:rgb(110,100,76); */
+ color:white;
+ font-family: 'Rubik', sans-serif;
 }
 
 body{
- background-size: cover;
- background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.9), rgba(117, 19, 93, 0.99)), url(../images/yingyang2.png);
- /* linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)), url('images/background.jpg'); */
+ /* background-image: linear-gradient(to bottom,rgba(0,0,0,0) rgba(315, 84, 36, 0.9), rgba(315, 84, 51, 0.85), rgba(315, 84, 46, 0.80), rgba(315,84,76,0.75), rgba(315,84,21,0.70)), url(../images/yingyang2.png); */
+ background-image: linear-gradient(to top,
+                rgba(242, 29, 47, 0.88),
+                rgba(252, 57, 30, 0.88),
+                rgba(230, 90, 39, 0.88)),
+                url(../images/yingyang2.png);
+ /* background-image: radial-gradient(
+                rgba(242, 29, 47, 0.95),
+                rgba(252, 57, 30, 0.99),
+                rgba(230, 90, 39, 0.90),
+                rgba(252, 122, 30, 0.99),
+                rgba(242, 148, 29, 0.95)
+                ),
+                url(../images/yingyang2.png); */
+ background-repeat:no-repeat;
+ background-position:center;
+ background-size:contain;
+ background-attachment:fixed;
+ padding-bottom: 1.5rem;
 }
+
+/* _________________________ 
+MAIN TITLE
+ _________________________ */
+
+ #mainTitle{
+  /* border:var(--borderYellow); */
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  margin:2rem 0 0.9rem;
+ }
+
+ #mainTitle h1{
+  /* border:green 1px solid; */
+  width:90%;
+  justify-content: center;
+  align-items: center;
+  font-size:1.2rem;
+  margin: 0 auto;
+ }
+
+ #mainTitle p{
+  /* border:black 1px solid; */
+  width:85%;
+  margin:0 auto;
+  justify-content:center;
+  align-items:center;
+  font-size:0.8rem;
+  font-style: italic;
+  font-weight: 900;
+ }
+
+ /* _________________________ 
+MAIN CONTAINER
+ _________________________ */
+
+#mainContainer{
+ /* border:var(--borderBlack); */
+ max-width:85%;
+ width:100%;
+ margin: 0 auto;
+ border-radius: 0.9%;
+ background-color:rgba(224,27,43,0.75);
+ box-shadow: -1px -1px 50px 5px rgba(0,0,0,0.8);
+ display:flex;
+ flex-direction:column;
+ justify-content:center;
+ align-items:center;
+}
+
+
+ /* _________________________ 
+ENTER YOUR NAME
+ _________________________ */
+
+ #enterYourName{
+  /* color:black;  */
+  /* border:var(--borderBlack); */
+  /* display:flex; */
+  /* justify-content: flex-start; */
+ }
+
+ #enterYourName p:first-child{
+  /* border:var(--borderYellow); */
+  /* display:flex;
+  justify-content: flex-start;  */
+  /* padding-left:1%;
+  margin:1% 0% 1.5% 1%; */
+  }
+
+ .containerWithWitheSpace, .containerWithOptionSelection, #annyCommentsSuggestions, #submitButton, footer{
+  /* border:var(--borderBlack); */
+  padding-left:1%;
+  margin:1.5% auto 1.5% auto;
+  width:85%;
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+ }
+
+
+ /* _________________________ 
+ENTER YOUR EMAIL
+ _________________________ */
+
+
+
+
+
+ /* _________________________ 
+ENTER YOUR AGE
+ _________________________ */
+
+
+
+
+
+ /* _________________________ 
+ENTER YOUR CURRENT ROLE
+ _________________________ */
+
+
+
+
+ /* _________________________ 
+RECOMMEND TO A FRIEND
+ _________________________ */
+
+
+
+
+ /* _________________________ 
+FAVORITE FEATURE
+ _________________________ */
+
+
+
+
+ /* _________________________ 
+WHAT WOULD YOU LIKE TO IMPROVE
+ _________________________ */
+
+
+
+
+
+ /* _________________________ 
+ANNY COMMENTS OR SUGGESTIONS
+ _________________________ */
+
+
+
+
+
+
+
+ /* _________________________ 
+SUBMIT BUTTON
+ _________________________ */
+
+
+
+
+
+ /* _________________________ 
+FOOTER
+ _________________________ */
+
+
+
+
+
+
+ /* _________________________ 
+MEDIA QUERIES
+ _________________________ */
