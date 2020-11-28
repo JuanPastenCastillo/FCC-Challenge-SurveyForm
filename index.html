@@ -19,44 +19,52 @@ MAIN TITLE
 </div>
 
 <!-- _________________________ 
-MAIN CONTAINER
+CONTAINER OF ALL THE SECTIONS BELOW
  _________________________ -->
 
-<div id="mainContainer">
+<form action="formSuccess.html" id="containerOfAllTheSectionsBelow">
 
 <!-- _________________________ 
 ENTER YOUR NAME
  _________________________ -->
- <section class="containerWithWitheSpace" id="enterYourName">
-  <p>Name</p>
-  <p>Here go the white box with the name</p>
+ <section class="containerWithWhiteSpace" id="enterYourName">
+  <label for="getName">Name</label>
+  <input id="getName" class="whiteRectangle" type="text" placeholder="Enter your name here" required title="Enter your name here">
  </section>
 
 <!-- _________________________ 
 ENTER YOUR EMAIL
  _________________________ -->
 
- <section class="containerWithWitheSpace" id="enterYourEmail">
-  <p>Email</p>
-  <p>Here go the white box with the email</p>
+ <section class="containerWithWhiteSpace" id="enterYourEmail">
+  <label for="getEmail">Email</label>
+  <input type="email" id="getEmail" class="whiteRectangle" placeholder="Enter your email here" required title="Enter your email here">
  </section>
 
 <!-- _________________________ 
 ENTER YOUR AGE
  _________________________ -->
 
- <section class="containerWithWitheSpace" id="enterYourAge">
-  <p>Age (optional)</p>
-  <p>Here go the white box with the age</p>
+ <section class="containerWithWhiteSpace" id="enterYourAge">
+  <label for="getAge">Age<span>(optional)</span></label>
+  <input type="number" id="getAge" class="whiteRectangle" required placeholder="Enter your age here" title="Enter your age here" min="10" max="120" step="1">
  </section>
 
 <!-- _________________________ 
 ENTER YOUR CURRENT ROLE
  _________________________ -->
 
- <section class="containerWithWitheSpace" id="enterYourCurrentRole">
-  <p>Wich option best describes your current role?</p>
-  <p>Here go the white box with the current role</p>
+ <section class="containerWithWhiteSpace" id="enterYourCurrentRole">
+  <label for="currentRole">Wich option best describes your current role?</label>
+  <select name="currentRole" id="listOfCurrentRole" class="whiteRectangle">
+   <optgroup label="Select your current role">
+    <option value="First">Student</option>
+    <option value="Second">Full time job</option>
+    <option value="Third">Full time learner</option>
+    <option value="Four">Prefer not to say</option>
+    <option value="Five">Other</option>
+   </optgroup>
+  </select>
  </section>
 
 <!-- _________________________ 
@@ -64,17 +72,31 @@ RECOMMEND TO A FRIEND
  _________________________ -->
 
  <section class="containerWithOptionSelection" id="recommendToAFriend">
-  <p>Would you recommend be happy, strongth and healthy to a friend?</p>
-  <p>Selection of alternatives. Are circles</p>
+  <label for="recommendAFriend">Would you recommend be happy, strongth and healthy to a friend?</label>
+  
+  <label for="Definitely"><input name="radioButton" type="radio" class="radioButton">Definitely</label>
+
+  <label for="Maybe"><input type="radio" name="radioButton" class="radioButton">Maybe</label>
+
+  <label for="Not Sure"><input type="radio" name="radioButton" class="radioButton">Not sure</label>
  </section>
 
 <!-- _________________________ 
 FAVORITE FEATURE
  _________________________ -->
 
- <section class="containerWithWitheSpace" id="favoriteFeature">
-  <p>What is your favorite feature of freeCodeCamp?</p>
-  <p>Here go the white box with the current role</p>
+ <section class="containerWithWhiteSpace" id="favoriteFeature">
+  <label for="favoriteFeature">What is your favorite feature of freeCodeCamp?</label>
+
+  <select name="favoriteFeature" id="favoriteFeature" class="whiteRectangle">
+   <optgroup label="Select an option">
+    <option value="Challenges">Challenges</option>
+    <option value="Projects">Projects</option>
+    <option value="Community">Community</option>
+    <option value="Open Source">Open Source</option>
+   </optgroup>
+  </select>
+
  </section>
 
 <!-- _________________________ 
@@ -82,8 +104,14 @@ WHAT WOULD YOU LIKE TO IMPROVE
  _________________________ -->
 
  <section class="containerWithOptionSelection" id="whatWouldYouLikeToImprove">
-  <p>What would you like to see improved? (check all that apply)</p>
-  <p>Selection of alternatives. Are squares</p>
+  <label for="whatWouldYouLikeToSeeImproved">What would you like to see improved? (check all that apply)</label>
+
+  <label for="First"><input type="checkbox" name="checkBox" class="checkBox">First</label>
+
+  <label for="Second"><input type="checkbox" name="checkBox" class="checkBox">Second</label>
+
+  <label for="Third"><input type="checkbox" name="checkBox" class="checkBox">Third</label>
+
  </section>
 
 <!-- _________________________ 
@@ -91,28 +119,31 @@ ANNY COMMENTS OR SUGGESTIONS
  _________________________ -->
 
  <section id="annyCommentsSuggestions">
-  <p>Any comments or sugestions?</p>
-  <p>Here is the box to write ("area text" is the technical word i think)</p>
+  <label for="commentsOrSugestions">Any comments or sugestions?</label>
+  <textarea id="textArea" name="comentaryOfTheUser" placeholder="Enter your comment here"></textarea>
  </section>
 
 <!-- _________________________ 
 SUBMIT BUTTON
  _________________________ -->
  <section id="submitButton">
-  <p>Submit button</p>
+  <input type="submit">
  </section>
+
+</form>
  
 <!-- _________________________ 
 FOOTER
  _________________________ -->
 
  <footer>
-  <p>footer</p>
+  <p>Created by JuanPasténCastilo</p>
+  <p>Contact me on <a href="https://twitter.com/JuanPastn2" target="_blank">Twitter</a> or <a href="https://www.linkedin.com/in/juan-past%C3%A9n-castillo-078b5817a/" target="_blank">Linkedin</a>. See my work on <a href="https://github.com/JuanPastenCastillo" target="_blank">Github</a></p>
  </footer>
 
 
-</div>
 
+ <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 
 </html>
