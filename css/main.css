@@ -9,6 +9,7 @@
 
 *{
  font-family: 'Rubik', sans-serif;
+ box-sizing:border-box;
 }
 
 html{
@@ -24,9 +25,9 @@ html{
 
 body{
  background-image: linear-gradient(to top,
-                rgba(242, 29, 47, 0.88),
-                rgba(252, 57, 30, 0.88),
-                rgba(230, 90, 39, 0.88)),
+                rgba(242, 29, 47, 0.95),
+                rgba(252, 57, 30, 0.85),
+                rgba(230, 90, 39, 0.75)),
                 url(../images/yingyang2.png);
  background-repeat:no-repeat;
  background-position:center;
@@ -40,26 +41,29 @@ MAIN TITLE
 
  #mainTitle{
   /* border:var(--borderYellow); */
-  width:100%;
+  max-width:700px;
+  width:95%;
   display:flex;
   flex-direction:column;
   justify-content:center;
   align-items:center;
-  margin:2rem 0 0.9rem;
+  margin:2rem auto 0.9rem;
  }
 
  #mainTitle h1{
   /* border:green 1px solid; */
-  width:90%;
+  max-width:700px;
+  width:95%;
   justify-content:center;
   align-items:center;
-  font-size:1.2rem;
-  margin:1.2rem auto 0 auto;
+  font-size:1.8rem;
+  margin:1.2rem auto 0.8rem auto;
  }
 
  #mainTitle p{
   /* border:black 1px solid; */
-  width:85%;
+  max-width:700px;
+  width:95%;
   margin:0.1rem auto 1.2rem auto;
   justify-content:center;
   align-items:center;
@@ -74,8 +78,8 @@ CONTAINER OF ALL THE SECTIONS BELOW
 
 #containerOfAllTheSectionsBelow{
  /* border:var(--borderBlack); */
- max-width:45%;
- width:100%;
+ max-width:700px;
+ width:95%;
  margin: 0 auto;
  border-radius: 12px;
  background-color:rgba(224,27,43,0.5);
@@ -89,32 +93,56 @@ CONTAINER OF ALL THE SECTIONS BELOW
 .containerWithWhiteSpace, .containerWithOptionSelection, #annyCommentsSuggestions, #submitButton{
  /* border:1px solid black; */
  margin:1.5% auto 5.9% auto;
- width:85%;
+ width:88%;
  display:flex;
  flex-direction:column;
  align-items:flex-start;
  text-align: left;
- box-sizing: border-box;
+ /* box-sizing: border-box; */
+ font-size:0.9rem;
 }
 
 .whiteRectangle{
  /* border:10px black solid; */
  border-radius:8px;
  padding:0.38rem;
- max-width:100%;
  width:100%;
  height:1.8rem;
  margin:0;
  border:none;
  font-size:0.6rem;
  box-shadow:inset 0 0.5px 8px rgb(12, 6, 63);
- box-sizing: border-box;
+ /* box-sizing: border-box; */
  outline:none;
 }
 
 .whiteRectangle:focus{
- background-color:black; /* CHANGE THIS COLOR FOR A VIOLET LIKE */
+ background-color:#05A1F2; /* CHANGE THIS COLOR FOR A VIOLET LIKE */
+}
+
+input:focus::placeholder {
+ color:white
+}
+
+input::placeholder {
+ color: black;
+ opacity: 1; /* Firefox */
+}
+
+input:focus:-ms-input-placeholder{
  color:white;
+}
+
+input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+color: black;
+}
+
+input:focus::-ms-input-placeholder{
+ color:white;
+}
+
+input::-ms-input-placeholder { /* Microsoft Edge */
+color: black;
 }
 
 
@@ -131,7 +159,7 @@ ENTER YOUR EMAIL
 ENTER YOUR AGE
  _________________________ */
 
-#enterYourAge span{
+.textInParentheses{
  /* border:var(--borderBlack); */
  font-size:0.6rem;
  margin-left:0;
@@ -180,7 +208,7 @@ ANNY COMMENTS OR SUGGESTIONS
   resize:vertical;
   border-radius: 8px;  
   padding:0.38rem;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   border:none;
   box-shadow:inset 0 0.5px 8px rgb(12, 6, 63);
   font-size:0.6rem;
@@ -189,9 +217,34 @@ ANNY COMMENTS OR SUGGESTIONS
  }
 
  #textArea:focus{
-  background-color:black;
+  background-color:#05A1F2;
+ }
+
+ #textArea:focus::placeholder {
+  color:white
+ }
+ 
+ #textArea::placeholder {
+  color: black;
+  opacity: 1; /* Firefox */
+ }
+ 
+ #textArea:focus:-ms-input-placeholder{
   color:white;
  }
+ 
+ #textArea:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: black;
+ }
+ 
+ #textArea:focus::-ms-input-placeholder{
+  color:white;
+ }
+ 
+ #textArea::-ms-input-placeholder { /* Microsoft Edge */
+ color: black;
+ }
+
  /* _________________________ 
 SUBMIT BUTTON
  _________________________ */
@@ -203,17 +256,16 @@ SUBMIT BUTTON
   border:none;
   /* margin: 0.6rem auto 0.6rem auto;
   padding:0.2rem; */
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   font-size:0.6rem;
   outline:none;
+  box-shadow:inset 0 0.5px 8px rgb(12, 6, 63);
  }
 
  #submitButton input:active{
-  background-color:green; /* CHANGE THE COLOR FOR OTHER MORE IN SINTONY */
+  background-color:#048ED9; /* CHANGE THE COLOR FOR OTHER MORE IN SINTONY */
+  color:white;
  }
-
-
-
 
  /* _________________________ 
 FOOTER
@@ -222,15 +274,9 @@ FOOTER
   /* border:var(--borderRed); */
   display:flex;
   flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  max-width:45%;
+  max-width:680px;
   width:100%;
   margin: 0.8rem auto 0 auto;
-  align-self: flex-end;
-  /* box-shadow: 0px -0.1px 8px 4px #000000, 
-              inset 0 0.5px 8px rgb(12, 6, 63); */
-  border-radius: 5px;
   font-family: monospace;
   font-size: 0.6rem;
   line-height: 0.9rem;
@@ -240,8 +286,9 @@ FOOTER
  footer p{
   /* border:var(--borderYellow); */
   align-self:flex-end;
-  margin:0.2rem;
-  margin-right:0.8rem;
+  text-align: right;
+  margin:0.2rem 0 0 0;
+  /* margin-right:0.8rem; */
  }
  
  footer p a{
@@ -258,10 +305,76 @@ FOOTER
   color:white;
  }
 
-
-
-
-
  /* _________________________ 
 MEDIA QUERIES
  _________________________ */
+
+@media only screen and (max-width: 560px) {
+ html{
+  font-size:1.1rem;
+  max-width:100%;
+  width:100%;
+ }
+
+ #mainTitle h1{
+  font-size:1.4rem;
+ }
+
+ #mainTitle p{
+ font-size:0.9rem;
+ }
+
+ input[type='radio'], [type="checkbox"] { 
+  transform: scale(1.4); 
+ }
+
+ .containerWithWhiteSpace, .containerWithOptionSelection, #annyCommentsSuggestions, #submitButton{
+  margin-bottom:0.9rem;
+ }
+
+ .whiteRectangle{
+ padding:1.0rem;
+ }
+}
+
+@media only screen and (max-width: 780px){
+ html{
+  font-size:1.4rem;
+  width:500px;
+  margin:0 auto;
+ }
+
+ #mainTitle h1{
+  font-size:1.6rem;
+ }
+
+ #mainTitle p{
+ font-size:1.2rem;
+ }
+
+ input[type='radio'], [type="checkbox"] { 
+  transform: scale(1.7); 
+ }
+
+ .containerWithWhiteSpace, .containerWithOptionSelection, #annyCommentsSuggestions, #submitButton{
+  margin-bottom:1.2rem;
+ }
+
+ .whiteRectangle{
+ padding:1.5rem;
+ }
+
+ footer{
+  /* border:var(--borderBlack); */
+  max-width:100%;
+  width:85%;
+  margin-top:0.9rem;
+ }
+
+ footer p{
+  /* border:var(--borderBlack); */
+  text-align:center;
+  align-self:center;
+  white-space: pre-line;
+ }
+}
