@@ -3,7 +3,7 @@
 <head>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Happy, Strong and Healthy</title>
+ <title>Happy, Strong and Healthy: survey form</title>
  <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -28,7 +28,7 @@ SURVEY FORM
 ENTER YOUR NAME
  _________________________ -->
  <section class="containerWithWhiteSpace" id="enterYourName">
-  <label for="getName" id="name-label">Name</label>
+  <label for="name-label" id="name-label">Name</label>
   <input id="name" class="whiteRectangle" type="text" placeholder="Enter your name here" required title="Enter your name here">
  </section>
 
@@ -37,7 +37,7 @@ ENTER YOUR EMAIL
  _________________________ -->
 
  <section class="containerWithWhiteSpace" id="enterYourEmail">
-  <label for="getEmail" id="email-label">Email</label>
+  <label for="email-label" id="email-label">Email</label>
   <input type="email" id="email" class="whiteRectangle" placeholder="Enter your email here" required title="Enter your email here">
  </section>
 
@@ -46,7 +46,7 @@ ENTER YOUR AGE
  _________________________ -->
 
  <section class="containerWithWhiteSpace" id="enterYourAge">
-  <label for="getAge" id="number-label">Age<span class="textInParentheses">(optional)</span></label>
+  <label for="number-label" id="number-label">Age<span class="textInParentheses">(optional)</span></label>
   <input type="number" id="number" class="whiteRectangle" placeholder="Enter your age here" title="Enter your age here" min="10" max="120" step="1">
  </section>
 
@@ -55,7 +55,7 @@ ENTER YOUR CURRENT ROLE
  _________________________ -->
 
  <section class="containerWithWhiteSpace" id="enterYourCurrentRole">
-  <label for="currentRole">Wich option best describes your current role?</label>
+  <label for="listOfCurrentRole">Wich option best describes your current role?</label>
   <select name="currentRole" id="listOfCurrentRole" class="whiteRectangle">
    <optgroup label="Select your current role">
     <option value="First">Student</option>
@@ -72,13 +72,13 @@ RECOMMEND TO A FRIEND
  _________________________ -->
 
  <section class="containerWithOptionSelection" id="recommendToAFriend">
-  <label for="recommendAFriend" >Would you recommend be happy, strongth and healthy to a friend?</label>
+  <p>Would you recommend be happy, strongth and healthy to a friend?</p>
   
-  <label for="Definitely"><input name="radioButton" type="radio" class="radioButton" name="recommendToAFriend" value="Definitely">Definitely</label>
+  <label for="Definitely"><input name="radioButton" type="radio" class="radioButton" value="Definitely" id="Definitely">Definitely</label>
 
-  <label for="Maybe"><input type="radio" name="radioButton" class="radioButton" name="recommendToAFriend" value="Maybe">Maybe</label>
+  <label for="Maybe"><input type="radio" name="radioButton" class="radioButton" value="Maybe" id="Maybe">Maybe</label>
 
-  <label for="Not Sure"><input type="radio" name="radioButton" class="radioButton" name="recommendToAFriend" value="Nor sure">Not sure</label>
+  <label for="notSure"><input type="radio" name="radioButton" class="radioButton" value="notSure" id="notSure">Not sure</label>
  </section>
 
 <!-- _________________________ 
@@ -104,27 +104,27 @@ WHAT WOULD YOU LIKE TO IMPROVE
  _________________________ -->
 
  <section class="containerWithOptionSelection" id="whatWouldYouLikeToImprove">
-  <label for="whatWouldYouLikeToSeeImproved">What would you like to see improved?<span class="textInParentheses">(check all that apply)</span></label>
+  <p>What would you like to see improved?<span class="textInParentheses">(check all that apply)</span></p>
 
-  <label for="First"><input type="checkbox" name="checkBox" value="First" class="checkBox">First</label>
+  <label for="First"><input type="checkbox" name="checkBox" value="First" class="checkBox" id="First">First</label>
 
-  <label for="Second"><input type="checkbox" name="checkBox" value="Second" class="checkBox">Second</label>
+  <label for="Second"><input type="checkbox" name="checkBox" value="Second" class="checkBox" id="Second">Second</label>
 
-  <label for="Third"><input type="checkbox" name="checkBox"  value="Third"class="checkBox">Third</label>
+  <label for="Third"><input type="checkbox" name="checkBox"  value="Third" class="checkBox" id="Third">Third</label>
 
-  <label for="Fourth"><input type="checkbox" name="checkBox"  value="Fourth" class="checkBox">Fourth</label>
+  <label for="Fourth"><input type="checkbox" name="checkBox"  value="Fourth" class="checkBox" id="Fourth">Fourth</label>
 
   <label for="Fifth"><input type="checkbox" name="checkBox"  value="Fifth" class="checkBox">Fifth</label>
 
-  <label for="Sixth"><input type="checkbox" name="checkBox"  value="Sixth" class="checkBox">Sixth</label>
+  <label for="Sixth"><input type="checkbox" name="checkBox"  value="Sixth" class="checkBox" id="Sixth">Sixth</label>
 
-  <label for="Seventh"><input type="checkbox" name="checkBox"  value="Seventh" class="checkBox">Seventh</label>
+  <label for="Seventh"><input type="checkbox" name="checkBox"  value="Seventh" class="checkBox" id="Seventh">Seventh</label>
 
-  <label for="Eighth"><input type="checkbox" name="checkBox"  value="Eighth" class="checkBox">Eighth</label>
+  <label for="Eighth"><input type="checkbox" name="checkBox"  value="Eighth" class="checkBox" id="Eighth">Eighth</label>
 
-  <label for="Tenth"><input type="checkbox" name="checkBox"  value="Tenth" kBox">Tenth</label>
+  <label for="Tenth"><input type="checkbox" name="checkBox"  value="Tenth" class="checkBox" id="Tenth">Tenth</label>
 
-  <label for="Eleventh"><input type="checkbox" name="checkBox"  value="Eleventh" class="checkBox">Eleventh</label>
+  <label for="Eleventh"><input type="checkbox" name="checkBox"  value="Eleventh" class="checkBox" id="Eleventh">Eleventh</label>
 
  </section>
 
@@ -133,7 +133,7 @@ ANNY COMMENTS OR SUGGESTIONS
  _________________________ -->
 
  <section id="annyCommentsSuggestions">
-  <label for="commentsOrSugestions">Any comments or sugestions?</label>
+  <label for="textArea">Any comments or sugestions?</label>
   <textarea id="textArea" name="comentaryOfTheUser" placeholder="Enter your comment here"></textarea>
  </section>
 
@@ -141,7 +141,7 @@ ANNY COMMENTS OR SUGGESTIONS
 SUBMIT BUTTON
  _________________________ -->
  <section id="submitButton">
-  <input type="submit" id="submit">
+  <input type="submit" id="submit" value="submitButton">
  </section>
 
 </form>
