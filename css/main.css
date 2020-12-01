@@ -24,11 +24,22 @@ html{
 }
 
 body{
- background-image: linear-gradient(to top,
+ /* background-image: linear-gradient(to top,
                 rgba(242, 29, 47, 0.95),
                 rgba(252, 57, 30, 0.85),
                 rgba(230, 90, 39, 0.75)),
-                url(../images/yingyang2.png);
+                url(../images/yingyang2.png); */
+ background-image: linear-gradient(
+ rgb(252, 232, 234, 0.11),
+ rgb(247, 187, 192, 0.22),
+ rgb(241, 141, 149, 0.33),
+ rgb(236, 96, 107, 0.44),
+ rgb(230, 50, 65, 0.55),
+ rgb(205, 25, 39, 0.66),
+ rgb(159, 19, 30, 0.77),
+ rgb(114, 14, 22, 0.88),
+ rgb(68, 8, 13, 0.99)),
+   url(../images/yingyang2.png);
  background-repeat:no-repeat;
  background-position:center;
  background-size:contain;
@@ -73,10 +84,10 @@ MAIN TITLE
  }
 
  /* _________________________ 
-CONTAINER OF ALL THE SECTIONS BELOW
+SURVEY FORM
  _________________________ */
 
-#containerOfAllTheSectionsBelow{
+#survey-form{
  /* border:var(--borderBlack); */
  max-width:700px;
  width:95%;
@@ -117,7 +128,7 @@ CONTAINER OF ALL THE SECTIONS BELOW
 }
 
 .whiteRectangle:focus{
- background-color:#05A1F2; /* CHANGE THIS COLOR FOR A VIOLET LIKE */
+ background-color:#05A1F2;
 }
 
 input:focus::placeholder {
@@ -333,7 +344,7 @@ MEDIA QUERIES
  }
 
  .whiteRectangle{
- padding:1.0rem;
+  height: 1.5rem;;
  }
 }
 
@@ -361,8 +372,8 @@ MEDIA QUERIES
  }
 
  .whiteRectangle{
- padding:1.5rem;
- }
+ height: 2.5rem;
+ } 
 
  footer{
   /* border:var(--borderBlack); */

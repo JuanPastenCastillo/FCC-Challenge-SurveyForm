@@ -1,50 +1,95 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
-/* :root{
- border:5px solid black;
- align-content: center;
-} */
+:root{
+ /* border:5px solid green; */
+ /* align-content: center; */
+}
 
-/* *{
+html, body {
+ height: 100%;
+}
+
+html {
+ display: table;
+ /* margin: auto; */
+}
+
+body{
  margin:0;
  padding:0;
- border:2px solid green;
+ display: table-cell;
+ vertical-align: middle;
  font-family: 'Rubik', sans-serif;
+ font-size:100%;
  box-sizing: border-box;
- border:5px solid black;
- align-content: center;
-} */
+ /* border:10px solid black; */
+ border-radius: 5px;
+ /* background-image: linear-gradient(to top,
+                rgba(236, 224, 225, 0.95),
+                rgba(153, 144, 143, 0.85),
+                rgba(43, 42, 41, 0.75),
+                rgba(43, 42, 41, 0.75),
+                rgba(153, 144, 143, 0.85),
+                rgba(236, 224, 225, 0.95));               */
+                
+/* background-image: linear-gradient(to top,
+                rgba(43, 42, 41, 0.75),
+                rgba(153, 144, 143, 0.85),
+                rgba(236, 224, 225, 0.95),
+                rgba(236, 224, 225, 0.95),
+                rgba(153, 144, 143, 0.85),
+                rgba(43, 42, 41, 0.75));     */
 
-/* html{
- border:5px solid black;
- align-content: center;
-} */
+ background-image: linear-gradient(
+ #730E16,
+ #8D2830,
+ #A64149,
+ #C05B63,
+ #D9747C,
+ #F28D95, 
+ #FFA7AF,
+ #FFC1C9,
+ #FFDAE2,
+ #FFF3FB); 
 
-/* body{
- border:5px solid black;
- align-content: center;
-} */
+ /* background-color: linear-gradient(to top,
+              rgba(242, 29, 47, 0.66),
+              rgba(115, 14, 22, 0.45),
+              rgba(179, 21, 35, 0.70)
+              rgba(236, 224, 225, 0.88),
+              rgba(236, 224, 225, 0.99),
+              rgba(179, 21, 35, 0.70),
+              rgba(115, 14, 22, 0.45),                
+              rgba(242, 29, 47, 0.66)); */
+             
+ background-repeat:no-repeat;
+ background-position:center;
+ background-size:contain;
+ background-attachment:fixed;
+}
 
 /* _________________________ 
 CONTAINER OF ALL ELEMENTS
 _________________________ */
 
 #containerOfAllElements{
- border:4px green solid;
- /* height:100%;
- width:100%; */
+ /* border:4px green solid; */
  display:grid;
- grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+ grid-template-columns: 1fr 1fr;
+ grid-auto-rows: 310px 310px 50px;
+ gap: 0.2rem 0.2rem;
+ /* grid-auto-columns: minmax(110px, 1fr); */
+
  /* grid-template-columns: repeat(2, 1fr); */
  /* grid-template-rows:repeat(auto-fit,10vw); */
- gap: 0 0.2rem;
+
+ 
  grid-template-areas:
   "titleTK imgYYC" 
   "firstP imgYYC" 
-  "footer footer";
-  grid-auto-rows: 310px;
-  justify-content: center;
-  align-content: center;
+  ". footer";
+ justify-content: center;
+ align-content: center;
 
 
 
@@ -64,11 +109,7 @@ _________________________ */
 }
 
 .gridItem{
- border:1px red solid;
- /* justify-self:center;  */
- /* align-self: stretch; */
- /* place-self: center; */
- /* padding:20px; */
+ /* border:1px green solid; */
  margin:0;
 }
 
@@ -80,66 +121,103 @@ _________________________ */
  grid-area: titleTK;
  align-self:end;
  justify-self: center;
- /* width:500px;
- height: 500px; */
+ font-size:5.2rem;
+ text-align:center;
+ margin:0 0 2rem 0;
+
+ background: linear-gradient(to top,
+  #0a1900,
+  #1f4b01,
+  #347d02,
+  #49af03,
+  #5ee104,
+  #77fb1e,
+  #95fc50,
+  #b4fd82,
+  #d2feb4,
+  #f0ffe6);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+
 }
+
+
 
 /* _________________________ 
 PARAGRAPHS
 _________________________ */
 #item2{
  grid-area:firstP;
- align-self: start;
+ align-self: stretch;
  justify-self: center;
  white-space: pre-line;
- /* width:500px;
- height: 500px; */
+ font-size:1.5rem;
+ text-align: left;
+ padding:0 0 0 0.9rem;
+ /* border:1px red solid; */
 }
 
-#item3{
- grid-area:secondP;
- /* width:500px;
- height: 500px; */
- 
+#item2 a{
+ text-decoration: none;
+ border-bottom:1px solid black;
+ color:black;
+ padding:0.1rem;
+ margin: 0 1.2rem 0 0;
 }
-
-#item4{
- grid-area:thirdP;
- /* width:500px;
- height: 500px; */
-}
-
 
 
 /* _________________________ 
 IMG ON THE RIGHT SIDE
 _________________________ */
-#item5{
+#item3{
  grid-area:imgYYC;  
  align-self:stretch;
- /* justify-self:center ; */
- /* width:500px;
- height: 500px; */
  background-image:url(../images/yingYangCats.png);
- /* height:100%;
- width:95%; */
  background-size: contain;
  background-repeat: no-repeat;
  background-position: center;
 }
 
-img{
- /* width:500px;
- height: 500px; */
-
-}
-
-
 /* _________________________ 
 FOOTER
 _________________________ */
-#item6{
+#item4{
  grid-area:footer; 
- /* width:500px;
- height: 500px; */
+ text-align:end;
+ font-size:1.4rem;
+ margin: 3rem 1.2rem 0 0;
+ font-family: monospace;
+ 
+}
+
+#item4 p{
+ margin:0 0.6rem; 
+}
+
+/* _________________________ 
+MEDIA QUERIES
+_________________________ */
+
+@media screen and (max-width: 500px) {
+ #containerOfAllElements{
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto 100vw 20vw;
+  row-gap: 80px;
+  /* grid-template-rows: 80px;   */
+  grid-template-areas:
+   "titleTK" 
+   "firstP" 
+   "imgYYC"
+   "footer";
+ }
+
+ #item1{
+  margin:0;
+ }
+ 
+ #item4, #item4 p{
+  margin:0 0.6rem; 
+ }
+
 }

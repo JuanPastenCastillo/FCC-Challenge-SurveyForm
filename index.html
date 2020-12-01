@@ -14,22 +14,22 @@ MAIN TITLE
  _________________________ -->
 
 <div id="mainTitle">
- <h1>Survey Form to be happy, strong and healthy</h1> 
- <p>Thank you for taking your time to find yourself and make this world better for you</p>
+ <h1 id="title">Survey Form to be happy, strong and healthy</h1> 
+ <p id="description">Thank you for taking your time to find yourself and make this world better for you</p>
 </div>
 
 <!-- _________________________ 
-CONTAINER OF ALL THE SECTIONS BELOW
+SURVEY FORM
  _________________________ -->
 
-<form action="formSuccess.html" id="containerOfAllTheSectionsBelow">
+<form action="formSuccess.html" id="survey-form">
 
 <!-- _________________________ 
 ENTER YOUR NAME
  _________________________ -->
  <section class="containerWithWhiteSpace" id="enterYourName">
-  <label for="getName">Name</label>
-  <input id="getName" class="whiteRectangle" type="text" placeholder="Enter your name here" required title="Enter your name here">
+  <label for="getName" id="name-label">Name</label>
+  <input id="name" class="whiteRectangle" type="text" placeholder="Enter your name here" required title="Enter your name here">
  </section>
 
 <!-- _________________________ 
@@ -37,8 +37,8 @@ ENTER YOUR EMAIL
  _________________________ -->
 
  <section class="containerWithWhiteSpace" id="enterYourEmail">
-  <label for="getEmail">Email</label>
-  <input type="email" id="getEmail" class="whiteRectangle" placeholder="Enter your email here" required title="Enter your email here">
+  <label for="getEmail" id="email-label">Email</label>
+  <input type="email" id="email" class="whiteRectangle" placeholder="Enter your email here" required title="Enter your email here">
  </section>
 
 <!-- _________________________ 
@@ -46,8 +46,8 @@ ENTER YOUR AGE
  _________________________ -->
 
  <section class="containerWithWhiteSpace" id="enterYourAge">
-  <label for="getAge">Age<span class="textInParentheses">(optional)</span></label>
-  <input type="number" id="getAge" class="whiteRectangle" required placeholder="Enter your age here" title="Enter your age here" min="10" max="120" step="1">
+  <label for="getAge" id="number-label">Age<span class="textInParentheses">(optional)</span></label>
+  <input type="number" id="number" class="whiteRectangle" placeholder="Enter your age here" title="Enter your age here" min="10" max="120" step="1">
  </section>
 
 <!-- _________________________ 
@@ -72,13 +72,13 @@ RECOMMEND TO A FRIEND
  _________________________ -->
 
  <section class="containerWithOptionSelection" id="recommendToAFriend">
-  <label for="recommendAFriend">Would you recommend be happy, strongth and healthy to a friend?</label>
+  <label for="recommendAFriend" >Would you recommend be happy, strongth and healthy to a friend?</label>
   
-  <label for="Definitely"><input name="radioButton" type="radio" class="radioButton">Definitely</label>
+  <label for="Definitely"><input name="radioButton" type="radio" class="radioButton" name="recommendToAFriend" value="Definitely">Definitely</label>
 
-  <label for="Maybe"><input type="radio" name="radioButton" class="radioButton">Maybe</label>
+  <label for="Maybe"><input type="radio" name="radioButton" class="radioButton" name="recommendToAFriend" value="Maybe">Maybe</label>
 
-  <label for="Not Sure"><input type="radio" name="radioButton" class="radioButton">Not sure</label>
+  <label for="Not Sure"><input type="radio" name="radioButton" class="radioButton" name="recommendToAFriend" value="Nor sure">Not sure</label>
  </section>
 
 <!-- _________________________ 
@@ -86,9 +86,9 @@ FAVORITE FEATURE
  _________________________ -->
 
  <section class="containerWithWhiteSpace" id="favoriteFeature">
-  <label for="favoriteFeature">What is your favorite feature of freeCodeCamp?</label>
+  <label for="favoriteFeature" >What is your favorite feature of freeCodeCamp?</label>
 
-  <select name="favoriteFeature" id="favoriteFeature" class="whiteRectangle">
+  <select name="favoriteFeature" id="dropdown" class="whiteRectangle">
    <optgroup label="Select an option">
     <option value="Challenges">Challenges</option>
     <option value="Projects">Projects</option>
@@ -106,25 +106,25 @@ WHAT WOULD YOU LIKE TO IMPROVE
  <section class="containerWithOptionSelection" id="whatWouldYouLikeToImprove">
   <label for="whatWouldYouLikeToSeeImproved">What would you like to see improved?<span class="textInParentheses">(check all that apply)</span></label>
 
-  <label for="First"><input type="checkbox" name="checkBox" class="checkBox">First</label>
+  <label for="First"><input type="checkbox" name="checkBox" value="First" class="checkBox">First</label>
 
-  <label for="Second"><input type="checkbox" name="checkBox" class="checkBox">Second</label>
+  <label for="Second"><input type="checkbox" name="checkBox" value="Second" class="checkBox">Second</label>
 
-  <label for="Third"><input type="checkbox" name="checkBox" class="checkBox">Third</label>
+  <label for="Third"><input type="checkbox" name="checkBox"  value="Third"class="checkBox">Third</label>
 
-  <label for="Fourth"><input type="checkbox" name="checkBox" class="checkBox">Fourth</label>
+  <label for="Fourth"><input type="checkbox" name="checkBox"  value="Fourth" class="checkBox">Fourth</label>
 
-  <label for="Fifth"><input type="checkbox" name="checkBox" class="checkBox">Fifth</label>
+  <label for="Fifth"><input type="checkbox" name="checkBox"  value="Fifth" class="checkBox">Fifth</label>
 
-  <label for="Sixth"><input type="checkbox" name="checkBox" class="checkBox">Sixth</label>
+  <label for="Sixth"><input type="checkbox" name="checkBox"  value="Sixth" class="checkBox">Sixth</label>
 
-  <label for="Seventh"><input type="checkbox" name="checkBox" class="checkBox">Seventh</label>
+  <label for="Seventh"><input type="checkbox" name="checkBox"  value="Seventh" class="checkBox">Seventh</label>
 
-  <label for="Eighth"><input type="checkbox" name="checkBox" class="checkBox">Eighth</label>
+  <label for="Eighth"><input type="checkbox" name="checkBox"  value="Eighth" class="checkBox">Eighth</label>
 
-  <label for="Tenth"><input type="checkbox" name="checkBox" class="checkBox">Tenth</label>
+  <label for="Tenth"><input type="checkbox" name="checkBox"  value="Tenth" kBox">Tenth</label>
 
-  <label for="Eleventh"><input type="checkbox" name="checkBox" class="checkBox">Eleventh</label>
+  <label for="Eleventh"><input type="checkbox" name="checkBox"  value="Eleventh" class="checkBox">Eleventh</label>
 
  </section>
 
@@ -141,7 +141,7 @@ ANNY COMMENTS OR SUGGESTIONS
 SUBMIT BUTTON
  _________________________ -->
  <section id="submitButton">
-  <input type="submit">
+  <input type="submit" id="submit">
  </section>
 
 </form>
