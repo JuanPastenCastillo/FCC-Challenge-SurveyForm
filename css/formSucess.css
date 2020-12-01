@@ -1,0 +1,145 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap'); */
+
+/* :root{
+ border:5px solid black;
+ align-content: center;
+} */
+
+/* *{
+ margin:0;
+ padding:0;
+ border:2px solid green;
+ font-family: 'Rubik', sans-serif;
+ box-sizing: border-box;
+ border:5px solid black;
+ align-content: center;
+} */
+
+/* html{
+ border:5px solid black;
+ align-content: center;
+} */
+
+/* body{
+ border:5px solid black;
+ align-content: center;
+} */
+
+/* _________________________ 
+CONTAINER OF ALL ELEMENTS
+_________________________ */
+
+#containerOfAllElements{
+ border:4px green solid;
+ /* height:100%;
+ width:100%; */
+ display:grid;
+ grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+ /* grid-template-columns: repeat(2, 1fr); */
+ /* grid-template-rows:repeat(auto-fit,10vw); */
+ gap: 0 0.2rem;
+ grid-template-areas:
+  "titleTK imgYYC" 
+  "firstP imgYYC" 
+  "footer footer";
+  grid-auto-rows: 310px;
+  justify-content: center;
+  align-content: center;
+
+
+
+ /* grid-template: 
+  [r1-start] "titleThanksYou imgYingYangCat" 1fr [r1-end]
+  [r2-start] "firstParagraph imgYingYangCat" 1fr [r2-end]
+  [r3-start] "secondParagraph imgYingYangCat" 1fr [r3-end]
+  [r4-start] "thirdParagraph imgYingYangCat" 1fr [r4-end]
+  [r5-start] "footer footer" 1fr [r5-end]
+  / 1fr 1fr; */
+
+ /* justify-items:center;  */
+ /* align-items:center;  */
+
+  /* border:2px blue solid; */
+ /* background-color:#2196F3; */
+}
+
+.gridItem{
+ border:1px red solid;
+ /* justify-self:center;  */
+ /* align-self: stretch; */
+ /* place-self: center; */
+ /* padding:20px; */
+ margin:0;
+}
+
+
+/* _________________________ 
+H1 Title
+_________________________ */
+#item1{
+ grid-area: titleTK;
+ align-self:end;
+ justify-self: center;
+ /* width:500px;
+ height: 500px; */
+}
+
+/* _________________________ 
+PARAGRAPHS
+_________________________ */
+#item2{
+ grid-area:firstP;
+ align-self: start;
+ justify-self: center;
+ white-space: pre-line;
+ /* width:500px;
+ height: 500px; */
+}
+
+#item3{
+ grid-area:secondP;
+ /* width:500px;
+ height: 500px; */
+ 
+}
+
+#item4{
+ grid-area:thirdP;
+ /* width:500px;
+ height: 500px; */
+}
+
+
+
+/* _________________________ 
+IMG ON THE RIGHT SIDE
+_________________________ */
+#item5{
+ grid-area:imgYYC;  
+ align-self:stretch;
+ /* justify-self:center ; */
+ /* width:500px;
+ height: 500px; */
+ background-image:url(../images/yingYangCats.png);
+ /* height:100%;
+ width:95%; */
+ background-size: contain;
+ background-repeat: no-repeat;
+ background-position: center;
+}
+
+img{
+ /* width:500px;
+ height: 500px; */
+
+}
+
+
+/* _________________________ 
+FOOTER
+_________________________ */
+#item6{
+ grid-area:footer; 
+ /* width:500px;
+ height: 500px; */
+}
