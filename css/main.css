@@ -117,6 +117,12 @@ SURVEY FORM
   padding:0;
 }
 
+legend{
+  font-size:1.5em;
+  /* font-family: "Rubik"; */
+  font-weight: bold;
+}
+
 .whiteRectangle{
  /* border:10px black solid; */
  border-radius:8px;
@@ -192,7 +198,7 @@ _________________________ */
 .fieldSet{
   border: none;
   padding: 0;
-  display: grid;
+  display: contents;
 }
 
 #recommendToAFriend p{
