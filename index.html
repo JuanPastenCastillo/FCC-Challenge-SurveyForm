@@ -28,7 +28,9 @@ SURVEY FORM
 ENTER YOUR NAME
  _________________________ -->
  <section class="containerWithWhiteSpace" id="enterYourName">
-  <label for="name-label" id="name-label">Name</label>
+  <label for="name-label" id="name-label">
+    <h2 class="titleH2">Name</h2>
+  </label>
   <input id="name-label" class="whiteRectangle" type="text" placeholder="Enter your name here" required title="Enter your name here">
  </section>
 
@@ -37,8 +39,10 @@ ENTER YOUR EMAIL
  _________________________ -->
 
  <section class="containerWithWhiteSpace" id="enterYourEmail">
-  <label for="email-label" id="email-label">Email</label>
-  <input type="email-label" id="email" class="whiteRectangle" placeholder="Enter your email here" required title="Enter your email here">
+  <label for="email-label">
+    <h2 class="titleH2">Email</h2>
+  </label>
+  <input type="email" id="email-label" class="whiteRectangle" placeholder="Enter your email here" required title="Enter your email here">
  </section>
 
 <!-- _________________________ 
@@ -46,7 +50,12 @@ ENTER YOUR AGE
  _________________________ -->
 
  <section class="containerWithWhiteSpace" id="enterYourAge">
-  <label for="number-label" id="number-label">Age<span class="textInParentheses">(optional)</span></label>
+  <label for="number-label" id="number-label">
+    <h2 class="titleH2">
+      Age<span class="textInParentheses"> (optional)</span>
+    </h2>
+  </label>
+    
   <input type="number" id="number-label" class="whiteRectangle" placeholder="Enter your age here" title="Enter your age here" min="10" max="120" step="1">
  </section>
 
@@ -55,7 +64,11 @@ ENTER YOUR CURRENT ROLE
  _________________________ -->
 
  <section class="containerWithWhiteSpace" id="enterYourCurrentRole">
-  <label for="listOfCurrentRole">Wich option best describes your current role?</label>
+  <label for="listOfCurrentRole">
+    <h2 class="titleH2">
+      Wich option best describes your current role?
+    </h2>
+  </label>
   <select name="currentRole" id="listOfCurrentRole" class="whiteRectangle">
    <optgroup label="Select your current role">
     <option value="First">Student</option>
@@ -73,8 +86,11 @@ RECOMMEND TO A FRIEND
 
  <section class="containerWithOptionSelection" id="recommendToAFriend">
   <fieldset class="fieldSet">
-   <p>Would you recommend be happy, strongth and healthy to a friend?</p>
-   
+   <h2 class="titleH2">
+     <legend>
+      Would you recommend be happy, strongth and healthy to a friend?
+    </legend>
+   </h2>   
    <label for="Definitely"><input name="radioButton" type="radio" class="radioButton" value="Definitely" id="Definitely">Definitely</label>
 
    <label for="Maybe"><input type="radio" name="radioButton" class="radioButton" value="Maybe" id="Maybe">Maybe</label>
@@ -88,7 +104,11 @@ FAVORITE FEATURE
  _________________________ -->
 
  <section class="containerWithWhiteSpace" id="favoriteFeature">
-  <label for="dropdown">What is your favorite feature of freeCodeCamp?</label>
+  <label for="dropdown">
+    <h2 class="titleH2" id="titleh2FavoriteFeature">
+     What is your favorite feature of freeCodeCamp?
+    </h2> 
+  </label>
 
   <select name="favoriteFeature" id="dropdown" class="whiteRectangle">
    <optgroup label="Select an option">
@@ -107,7 +127,11 @@ WHAT WOULD YOU LIKE TO IMPROVE
 
  <section class="containerWithOptionSelection" id="whatWouldYouLikeToImprove">
   <fieldset class="fieldSet">
-   <p>What would you like to see improved?<span class="textInParentheses">(check all that apply)</span></p>
+   <h2 class="titleH2">
+    <legend>
+     What would you like to see improved?<span  class="textInParentheses"> (check all that apply)</span>
+    </legend>
+   </h2>
 
    <label for="First"><input type="checkbox" name="checkBox" value="First" class="checkBox" id="First">First</label>
 
@@ -136,15 +160,21 @@ ANNY COMMENTS OR SUGGESTIONS
  _________________________ -->
 
  <section id="annyCommentsSuggestions">
-  <label for="textArea">Any comments or sugestions?</label>
+  <label for="textArea">
+    <h3>
+      Any comments or sugestions?
+    </h3>
+  </label>
   <textarea id="textArea" name="comentaryOfTheUser" placeholder="Enter your comment here"></textarea>
  </section>
 
 <!-- _________________________ 
 SUBMIT BUTTON
  _________________________ -->
- <label for="submit" id="submitButton"></label>
- <input type="submit" id="submit" value="Submit">
+ <label for="submitButton">
+   <h4>Submit Button</h4>
+ </label>
+ <input type="submit" id="submitButton" value="Submit">
 
 </form>
  
