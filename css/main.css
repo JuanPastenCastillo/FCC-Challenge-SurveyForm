@@ -101,7 +101,7 @@ SURVEY FORM
  align-items:center;
 }
 
-.containerWithWhiteSpace, .containerWithOptionSelection, #annyCommentsSuggestions, #submitButton{
+.containerWithWhiteSpace, .containerWithOptionSelection, #annyCommentsSuggestions, #submit{
  /* border:1px solid black; */
  margin:1.5% auto 5.9% auto;
  width:88%;
@@ -281,10 +281,10 @@ ANNY COMMENTS OR SUGGESTIONS
  }
 
  /* _________________________ 
-SUBMIT BUTTON
+SUBMIT
 _________________________ */
 
-#submitButton{
+#submit{
   width:88%;
   height: 1.8rem;
   border-radius: 8px;
@@ -299,7 +299,7 @@ _________________________ */
   box-shadow:inset 0 0.5px 8px rgb(12, 6, 63);
  }
 
-#submitButton:active{
+#submit:active{
   background-color:#048ED9;
   color:white;
  }
@@ -379,7 +379,7 @@ MEDIA QUERIES
   transform: scale(1.4); 
  }
 
- .containerWithWhiteSpace, .containerWithOptionSelection, #annyCommentsSuggestions, #submitButton{
+ .containerWithWhiteSpace, .containerWithOptionSelection, #annyCommentsSuggestions, #submit{
   margin-bottom:0.9rem;
  }
 
@@ -407,7 +407,7 @@ MEDIA QUERIES
   transform: scale(1.7); 
  }
 
- .containerWithWhiteSpace, .containerWithOptionSelection, #annyCommentsSuggestions, #submitButton{
+ .containerWithWhiteSpace, .containerWithOptionSelection, #annyCommentsSuggestions, #submit{
   margin-bottom:1.2rem;
  }
 
