@@ -138,7 +138,6 @@ _________________________ */
   #f0ffe6);
  -webkit-background-clip: text;
  -webkit-text-fill-color: transparent;
-
 }
 
 
@@ -161,8 +160,12 @@ _________________________ */
  text-decoration: none;
  border-bottom:1px solid black;
  color:black;
- padding:0.1rem;
  margin: 0 1.2rem 0 0;
+}
+
+#item2 a:hover{
+  text-transform: uppercase;
+  padding:0.1rem;
 }
 
 
@@ -187,7 +190,6 @@ _________________________ */
  font-size:1.4rem;
  margin: 3rem 1.2rem 0 0;
  font-family: monospace;
- 
 }
 
 #item4 p{

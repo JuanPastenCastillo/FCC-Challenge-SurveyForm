@@ -179,20 +179,30 @@ ENTER YOUR AGE
 
  /* _________________________ 
 ENTER YOUR CURRENT ROLE
- _________________________ */
+_________________________ */
 
  /* _________________________ 
 RECOMMEND TO A FRIEND
- _________________________ */
+_________________________ */
 
- #recommendToAFriend input{
+.fieldSet{
+  border: none;
+  padding: 0;
+  display: grid;
+}
+
+#recommendToAFriend p{
+  margin:0;
+}
+ 
+#recommendToAFriend input{
   margin-right:0.6rem;
- }
+}
 
- input[type='radio'], [type="checkbox"] { 
+input[type='radio'], [type="checkbox"] { 
   transform: scale(2); 
   vertical-align:middle;
- }
+}
 
 
  /* _________________________ 
@@ -203,8 +213,12 @@ FAVORITE FEATURE
 
  /* _________________________ 
 WHAT WOULD YOU LIKE TO IMPROVE
- _________________________ */
+_________________________ */
 
+#whatWouldYouLikeToImprove p{
+  margin:0;
+}
+ 
  #whatWouldYouLikeToImprove input{
   margin-right:0.6rem;
  }
