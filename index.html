@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,7 +23,7 @@ MAIN TITLE
 SURVEY FORM
  _________________________ -->
 
-<form action="formSuccess.html" id="survey-form">
+<form action="formSuccess.html" id="survey-form" name="surveyFormToBeHappyStrongtHealthy">
 
 <!-- _________________________ 
 ENTER YOUR NAME
@@ -33,7 +34,7 @@ ENTER YOUR NAME
       Name
     </label>
   </h2>
-  <input id="name" class="whiteRectangle" type="text" placeholder="Enter your name here" required title="Enter your name here">
+  <input id="name" class="whiteRectangle" type="text" placeholder="Enter your name here" required title="Enter your name here" name="nameOfUser">
  </section>
 
 <!-- _________________________ 
@@ -46,7 +47,7 @@ ENTER YOUR EMAIL
       Email
     </label>
   </h2>
-  <input type="email" id="email" class="whiteRectangle" placeholder="Enter your email here" required title="Enter your email here">
+  <input type="email" id="email" class="whiteRectangle" placeholder="Enter your email here" required title="Enter your email here" name="emailOfUser">
  </section>
 
 <!-- _________________________ 
@@ -56,11 +57,11 @@ ENTER YOUR AGE
  <section class="containerWithWhiteSpace" id="enterYourAge">
   <h2 class="titleH2">
     <label for="number" id="number-label">
-      Age<span class="textInParentheses"> (optional)</span>
+      Age<small class="textInParentheses"> (optional)</small>
     </label>
   </h2>  
     
-  <input type="number" id="number" class="whiteRectangle" placeholder="Enter your age here" title="Enter your age here" min="10" max="120" step="1">
+  <input type="number" id="number" class="whiteRectangle" placeholder="Enter your age here" title="Enter your age here" min="10" max="120" step="1" name="ageOfUser">
  </section>
 
 <!-- _________________________ 
@@ -75,11 +76,11 @@ ENTER YOUR CURRENT ROLE
   </h2>
   <select name="currentRole" id="listOfCurrentRole" class="whiteRectangle">
    <optgroup label="Select your current role">
-    <option value="First">Student</option>
-    <option value="Second">Full time job</option>
-    <option value="Third">Full time learner</option>
-    <option value="Four">Prefer not to say</option>
-    <option value="Five">Other</option>
+    <option value="Student">Student</option>
+    <option value="fullTimeJob">Full time job</option>
+    <option value="fullTimeLearner">Full time learner</option>
+    <option value="preferNotToSay">Prefer not to say</option>
+    <option value="other">Other</option>
    </optgroup>
   </select>
  </section>
@@ -130,7 +131,7 @@ WHAT WOULD YOU LIKE TO IMPROVE
  <section class="containerWithOptionSelection" id="whatWouldYouLikeToImprove">
   <fieldset class="fieldSet">
     <legend>
-     What would you like to see improved?<span  class="textInParentheses"> (check all that apply)</span>
+     What would you like to see improved?<small  class="textInParentheses"> (check all that apply)</small>
     </legend>
 
    <label for="First"><input type="checkbox" name="checkBox" value="First" class="checkBox" id="First">First</label>
@@ -176,7 +177,7 @@ SUBMIT
       Submit Button
     </label>
   </h4>
-  <input type="submit" id="submit" value="Submit">
+  <input name="submit" type="submit" id="submit" value="Submit">
 
 </form>
  
