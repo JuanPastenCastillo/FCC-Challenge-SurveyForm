@@ -324,7 +324,7 @@ _________________________ */
   color:rgba(250,250,250,0.8);
  }
  
- footer p{
+ footer p, address{
   /* border:var(--borderYellow); */
   align-self:flex-end;
   text-align: right;
@@ -332,17 +332,17 @@ _________________________ */
   /* margin-right:0.8rem; */
  }
  
- footer p a{
+ footer address a{
   color:rgb(26, 26, 156);
   color:white;
   font-weight: 900;
  }
  
- footer p a:hover{
+ footer address a:hover{
   text-transform:uppercase;
  }
  
- footer p a:focus{
+ footer address a:focus{
   color:white;
  }
 
@@ -422,7 +422,7 @@ MEDIA QUERIES
   margin-top:0.9rem;
  }
 
- footer p{
+ footer address{
   /* border:var(--borderBlack); */
   text-align:center;
   align-self:center;
